@@ -1,0 +1,195 @@
+{%extends 'base.html' %}
+{% load static %}
+{% block title %}Brook Cherith Christian Learning Center{% endblock %}
+
+{% block content %}
+
+</br>
+
+<!-- <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{% static 'images/burger logo.jpg'%}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="{% url 'about'%}" class="btn btn-primary">About Me</a>
+    </div>
+</div> -->
+
+<div class="row">
+  <!-- LOG IN -->
+  <div class="col-sm-6">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label"><b>Log In</b></label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="inputUsername3" placeholder="Username">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-8">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+      </div>
+    
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-5">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-5">
+          <button type="submit" class="btn btn-success" href="">Log in</button>
+        </div>
+      </div>
+    </form>
+  </div> 
+
+  <!-- SIGN UP -->
+  <div class="col-sm-6">
+    <div class="form-group">
+      <div class="col-sm-10">
+        <label><b>Sign Up</b></label>
+      <div class="row">
+      <div class="col-sm-offset-3 col-sm-6">
+        <input type="text" class="form-control" id="firstname" placeholder="First Name">
+      </div> 
+      <div class="col-sm-offset-3 col-sm-6">
+        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+      </div>
+      </div>
+        <input type="text" class="form-control" id="email" placeholder="Email">
+        <input type="text" class="form-control" id="username" placeholder="New Username">
+        <input type="password" class="form-control" id="password" placeholder="New Password">
+        <input type="text" class="form-control" id="cpnumber" placeholder="Phone Number">
+      </div>
+    </div>  
+
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+
+      <label><b>Gender</b></label>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="radio">
+            <label><input type="radio" name="optradio" checked>Male</label>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="radio">
+            <label><input type="radio" name="optradio">Female</label>
+          </div>
+        </div>
+      </div>
+
+      <label><b>Birthday</b></label>
+      <div class="form-group">
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-6">
+            <label for="sel1">Month</label>
+            <select class="form-control" id="sel1">
+              <option> </option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+          <div class="col-sm-offset-2 col-sm-3">
+            <label for="sel1">Day</label>
+            <select class="form-control" id="sel1">
+              <option> </option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+          </div>
+          <div class="col-sm-offset-2 col-sm-3">
+            <label for="sel1">Year</label>
+            <select class="form-control" id="sel1">
+              <option> </option>
+              <option>1990</option>
+              <option>1991</option>
+              <option>1992</option>
+              <option>1993</option>
+              <option>1994</option>
+              <option>1995</option>
+              <option>1996</option>
+              <option>1997</option>
+              <option>1998</option>
+              <option>1999</option>
+              <option>2000</option>
+              <option>2001</option>
+              <option>2002</option>
+              <option>2003</option>
+              <option>2004</option>
+            </select>
+          </div>
+        </div><br/><br/>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-12">
+           <label for="sel1"><b>School Role</b></label>
+            <select class="form-control" id="role">
+              <option> </option>
+              <option>Admin</option>
+              <option>Management</option>
+              <option>Staff/Teacher</option>
+              <option>Student</option>
+              <option>Parent</option>
+            </select>
+          </div>
+        </div>
+      </div>
+        <label><b>Admin User Verification</b></label>
+        <input type="text" class="form-control" id="referral" placeholder="Username">
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        <br/>
+        <button type="button" class="btn btn-success" href="">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+{% endblock %}
