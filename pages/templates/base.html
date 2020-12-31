@@ -18,8 +18,16 @@
   </head>
   <body class="back">
       <nav class="navbar navbar-light bg-light">
-        <!-- <img class="logo" src="{% static 'images/logo.jpg' %}"> -->
-          <a class="navbar-brand" href="{% url 'home' %}"><h3>Brook Cherith Christian Learning Center</h3></a>
+        
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <h3><img src="{% static 'images/logo.png'%}">  Brook Cherith Christian Learning Center</h3>
+          </a>
+          <a href="#" class="pull-left">Services</a>
+          <a href="#" class="pull-left">Admission</a>
+          <a href="#" class="pull-left">Academics</a>
+          <a href="#" class="pull-left">Contact Us</a>
+          <a href="{% url 'signup' %}" class="pull-left">Login/Signup</a>
+          
       </nav>
         <div class="container-fluid">
           {% block content %}
